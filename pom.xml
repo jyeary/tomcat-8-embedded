@@ -16,9 +16,10 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>8.5.16</version>
+            <version>8.5.27</version>
         </dependency>
         <!-- The Apache Tomcat Download for Embedded uses 4.6.3, but it is not on Maven Central at this time. -->
+        <!-- After further examination of the 4.6.3 jar included in the Apache download, it was determined that the actual JDT was 3.12.3.v20170228-1205 -->
         <!--        
         <dependency>
             <groupId>org.eclipse.jdt.core.compiler</groupId>
@@ -26,15 +27,17 @@
             <version>4.6.3</version>
         </dependency>
         -->
+        
         <dependency>
-            <groupId>org.eclipse.jdt.core.compiler</groupId>
+            <groupId>org.eclipse.jdt</groupId>
             <artifactId>ecj</artifactId>
-            <version>4.6.1</version>
+            <version>3.12.3</version>
         </dependency>
+        
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-dbcp</artifactId>
-            <version>8.5.21</version>
+            <version>8.5.27</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.tomcat</groupId>
@@ -45,12 +48,12 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-el</artifactId>
-            <version>8.5.21</version>
+            <version>8.5.27</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <version>8.5.21</version>
+            <version>8.5.27</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.eclipse.jdt</groupId>
@@ -61,7 +64,12 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-websocket</artifactId>
-            <version>8.5.21</version>
+            <version>8.5.27</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-annotations-api</artifactId>
+            <version>8.5.27</version>
         </dependency>
     </dependencies>
     <name>Embedded Apache Tomcat 8.5.x</name>
