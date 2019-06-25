@@ -1,5 +1,5 @@
 /*
- * Copyright 2017 Blue Lotus Software, LLC.
+ * Copyright 2017-2019 Blue Lotus Software, LLC.
  * Copyright 2017 John Yeary <jyeary@bluelotussoftware.com>.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -5,12 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bluelotussoftware</groupId>
     <artifactId>tomcat-8-embedded</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <apache.tomcat.version>8.5.42</apache.tomcat.version>
     </properties>
     <dependencies>
         <!-- The Apache Tomcat Download for Embedded uses 4.6.3, but it is not on Maven Central at this time. -->
@@ -32,12 +33,12 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>8.5.34</version>
+            <version>${apache.tomcat.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-dbcp</artifactId>
-            <version>8.5.27</version>
+            <version>${apache.tomcat.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.tomcat</groupId>
@@ -48,12 +49,12 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-el</artifactId>
-            <version>8.5.34</version>
+            <version>${apache.tomcat.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-            <version>8.5.34</version>
+            <version>${apache.tomcat.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.eclipse.jdt</groupId>
@@ -64,12 +65,12 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-websocket</artifactId>
-            <version>8.5.34</version>
+            <version>${apache.tomcat.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-annotations-api</artifactId>
-            <version>8.5.34</version>
+            <version>${apache.tomcat.version}</version>
         </dependency>
     </dependencies>
     <build>
@@ -97,7 +98,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.1.2</version>
                 <configuration>
                     <archive>
                         <manifest>
