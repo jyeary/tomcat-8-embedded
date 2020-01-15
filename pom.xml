@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.bluelotussoftware</groupId>
     <artifactId>tomcat-8-embedded</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <apache.tomcat.version>8.5.42</apache.tomcat.version>
+        <apache.tomcat.version>8.5.50</apache.tomcat.version>
     </properties>
     <dependencies>
         <!-- The Apache Tomcat Download for Embedded uses 4.6.3, but it is not on Maven Central at this time. -->
